@@ -14,6 +14,7 @@ import s3Security from '../blogs/automated-s3-security.md?raw';
 import backupTesting from '../blogs/backup-testing-plan.md?raw';
 import amazonQ from '../blogs/amazon-q-developer.md?raw';
 import athenaVmware from '../blogs/aws-athena-vmware-migration.md?raw';
+import awsTransform from '../blogs/aws-transform-vmware-migration.md?raw';
 
 const blogContents = {
   'gen-ai-healthcare-aws.md': awsBlog,
@@ -24,7 +25,8 @@ const blogContents = {
   'automated-s3-security.md': s3Security,
   'backup-testing-plan.md': backupTesting,
   'amazon-q-developer.md': amazonQ,
-  'aws-athena-vmware-migration.md': athenaVmware
+  'aws-athena-vmware-migration.md': athenaVmware,
+  'aws-transform-vmware-migration.md': awsTransform
 };
 
 export function loadBlogPosts(category = null) {

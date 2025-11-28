@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500">
+  <rect x="10" y="10" width="880" height="480" fill="white" stroke="#CCC" stroke-width="1" rx="5"/>
+  
+  <text x="450" y="40" font-family="Arial" font-size="22" fill="#232F3E" text-anchor="middle" font-weight="bold">Migration Assessment Results</text>
+  
+  <!-- Readiness Pie Chart -->
+  <circle cx="200" cy="200" r="100" fill="#4CAF50"/>
+  <path d="M 200 200 L 200 100 A 100 100 0 0 1 283 250 Z" fill="#FF9900"/>
+  <path d="M 200 200 L 283 250 A 100 100 0 0 1 200 300 Z" fill="#F44336"/>
+  
+  <text x="200" y="350" font-family="Arial" font-size="14" fill="#232F3E" text-anchor="middle" font-weight="bold">Migration Readiness</text>
+  
+  <!-- Legend -->
+  <rect x="50" y="370" width="15" height="15" fill="#4CAF50"/>
+  <text x="70" y="382" font-family="Arial" font-size="12" fill="#232F3E">Ready (95%)</text>
+  
+  <rect x="50" y="395" width="15" height="15" fill="#FF9900"/>
+  <text x="70" y="407" font-family="Arial" font-size="12" fill="#232F3E">Needs Review (3%)</text>
+  
+  <rect x="50" y="420" width="15" height="15" fill="#F44336"/>
+  <text x="70" y="432" font-family="Arial" font-size="12" fill="#232F3E">Not Ready (2%)</text>
+  
+  <!-- Statistics Cards -->
+  <rect x="400" y="80" width="220" height="100" fill="#E8F4F8" stroke="#0073BB" stroke-width="2" rx="5"/>
+  <text x="510" y="110" font-family="Arial" font-size="14" fill="#0073BB" text-anchor="middle" font-weight="bold">Total Workloads</text>
+  <text x="510" y="150" font-family="Arial" font-size="36" fill="#232F3E" text-anchor="middle" font-weight="bold">150</text>
+  
+  <rect x="650" y="80" width="220" height="100" fill="#FFF5E6" stroke="#FF9900" stroke-width="2" rx="5"/>
+  <text x="760" y="110" font-family="Arial" font-size="14" fill="#FF9900" text-anchor="middle" font-weight="bold">Est. Monthly Cost</text>
+  <text x="760" y="150" font-family="Arial" font-size="32" fill="#232F3E" text-anchor="middle" font-weight="bold">$28,450</text>
+  
+  <rect x="400" y="200" width="220" height="100" fill="#E8F8E8" stroke="#4CAF50" stroke-width="2" rx="5"/>
+  <text x="510" y="230" font-family="Arial" font-size="14" fill="#2E7D32" text-anchor="middle" font-weight="bold">Cost Savings</text>
+  <text x="510" y="270" font-family="Arial" font-size="32" fill="#232F3E" text-anchor="middle" font-weight="bold">38%</text>
+  
+  <rect x="650" y="200" width="220" height="100" fill="#F3E5F5" stroke="#9C27B0" stroke-width="2" rx="5"/>
+  <text x="760" y="230" font-family="Arial" font-size="14" fill="#7B1FA2" text-anchor="middle" font-weight="bold">Migration Time</text>
+  <text x="760" y="270" font-family="Arial" font-size="32" fill="#232F3E" text-anchor="middle" font-weight="bold">8 weeks</text>
+  
+  <!-- Recommendations -->
+  <rect x="400" y="320" width="470" height="140" fill="white" stroke="#FF9900" stroke-width="2" rx="5"/>
+  <text x="635" y="345" font-family="Arial" font-size="16" fill="#FF9900" text-anchor="middle" font-weight="bold">Top Recommendations</text>
+  
+  <text x="420" y="375" font-family="Arial" font-size="13" fill="#232F3E">✓ Right-size 45 VMs for 25% cost reduction</text>
+  <text x="420" y="400" font-family="Arial" font-size="13" fill="#232F3E">✓ Migrate databases to RDS for better performance</text>
+  <text x="420" y="425" font-family="Arial" font-size="13" fill="#232F3E">✓ Use Auto Scaling for web tier (12 instances)</text>
+  <text x="420" y="450" font-family="Arial" font-size="13" fill="#232F3E">✓ Implement S3 for object storage (save 60%)</text>
+</svg>

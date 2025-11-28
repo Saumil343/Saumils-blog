@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600">
+  <rect x="10" y="10" width="880" height="580" fill="white" stroke="#CCC" stroke-width="1" rx="5"/>
+  
+  <text x="450" y="40" font-family="Arial" font-size="22" fill="#232F3E" text-anchor="middle" font-weight="bold">Migration Recommendations</text>
+  
+  <!-- Table Header -->
+  <rect x="30" y="60" width="840" height="40" fill="#232F3E" rx="3"/>
+  <text x="80" y="85" font-family="Arial" font-size="13" fill="white" font-weight="bold">VM Name</text>
+  <text x="250" y="85" font-family="Arial" font-size="13" fill="white" font-weight="bold">Current</text>
+  <text x="400" y="85" font-family="Arial" font-size="13" fill="white" font-weight="bold">Recommended</text>
+  <text x="600" y="85" font-family="Arial" font-size="13" fill="white" font-weight="bold">Monthly Cost</text>
+  <text x="750" y="85" font-family="Arial" font-size="13" fill="white" font-weight="bold">Complexity</text>
+  
+  <!-- Row 1 -->
+  <rect x="30" y="100" width="840" height="50" fill="#F5F5F5" rx="3"/>
+  <text x="50" y="130" font-family="Arial" font-size="12" fill="#232F3E">web-server-01</text>
+  <text x="250" y="130" font-family="Arial" font-size="11" fill="#666">4 vCPU, 16GB</text>
+  <text x="400" y="130" font-family="Arial" font-size="11" fill="#FF9900" font-weight="bold">t3.xlarge</text>
+  <text x="600" y="130" font-family="Arial" font-size="11" fill="#4CAF50" font-weight="bold">$121.76</text>
+  <circle cx="770" cy="125" r="8" fill="#4CAF50"/>
+  <text x="790" y="130" font-family="Arial" font-size="11" fill="#4CAF50">LOW</text>
+  
+  <!-- Row 2 -->
+  <rect x="30" y="150" width="840" height="50" fill="white" rx="3"/>
+  <text x="50" y="180" font-family="Arial" font-size="12" fill="#232F3E">app-server-01</text>
+  <text x="250" y="180" font-family="Arial" font-size="11" fill="#666">8 vCPU, 32GB</text>
+  <text x="400" y="180" font-family="Arial" font-size="11" fill="#FF9900" font-weight="bold">c5.2xlarge</text>
+  <text x="600" y="180" font-family="Arial" font-size="11" fill="#4CAF50" font-weight="bold">$243.52</text>
+  <circle cx="770" cy="175" r="8" fill="#4CAF50"/>
+  <text x="790" y="180" font-family="Arial" font-size="11" fill="#4CAF50">LOW</text>
+  
+  <!-- Row 3 -->
+  <rect x="30" y="200" width="840" height="50" fill="#F5F5F5" rx="3"/>
+  <text x="50" y="230" font-family="Arial" font-size="12" fill="#232F3E">db-server-01</text>
+  <text x="250" y="230" font-family="Arial" font-size="11" fill="#666">16 vCPU, 64GB</text>
+  <text x="400" y="230" font-family="Arial" font-size="11" fill="#FF9900" font-weight="bold">RDS r5.2xlarge</text>
+  <text x="600" y="230" font-family="Arial" font-size="11" fill="#4CAF50" font-weight="bold">$487.04</text>
+  <circle cx="770" cy="225" r="8" fill="#FF9900"/>
+  <text x="790" y="230" font-family="Arial" font-size="11" fill="#FF9900">MEDIUM</text>
+  
+  <!-- Row 4 -->
+  <rect x="30" y="250" width="840" height="50" fill="white" rx="3"/>
+  <text x="50" y="280" font-family="Arial" font-size="12" fill="#232F3E">cache-server-01</text>
+  <text x="250" y="280" font-family="Arial" font-size="11" fill="#666">4 vCPU, 16GB</text>
+  <text x="400" y="280" font-family="Arial" font-size="11" fill="#FF9900" font-weight="bold">ElastiCache r5.large</text>
+  <text x="600" y="280" font-family="Arial" font-size="11" fill="#4CAF50" font-weight="bold">$182.50</text>
+  <circle cx="770" cy="275" r="8" fill="#4CAF50"/>
+  <text x="790" y="280" font-family="Arial" font-size="11" fill="#4CAF50">LOW</text>
+  
+  <!-- Row 5 -->
+  <rect x="30" y="300" width="840" height="50" fill="#F5F5F5" rx="3"/>
+  <text x="50" y="330" font-family="Arial" font-size="12" fill="#232F3E">file-server-01</text>
+  <text x="250" y="330" font-family="Arial" font-size="11" fill="#666">2 vCPU, 8GB</text>
+  <text x="400" y="330" font-family="Arial" font-size="11" fill="#FF9900" font-weight="bold">EFS Standard</text>
+  <text x="600" y="330" font-family="Arial" font-size="11" fill="#4CAF50" font-weight="bold">$150.00</text>
+  <circle cx="770" cy="325" r="8" fill="#4CAF50"/>
+  <text x="790" y="330" font-family="Arial" font-size="11" fill="#4CAF50">LOW</text>
+  
+  <!-- Summary Box -->
+  <rect x="30" y="380" width="840" height="180" fill="#E8F4F8" stroke="#0073BB" stroke-width="2" rx="5"/>
+  <text x="450" y="410" font-family="Arial" font-size="18" fill="#0073BB" text-anchor="middle" font-weight="bold">Migration Summary</text>
+  
+  <text x="60" y="445" font-family="Arial" font-size="14" fill="#232F3E">Total VMs to Migrate: <tspan font-weight="bold" fill="#FF9900">150</tspan></text>
+  <text x="60" y="475" font-family="Arial" font-size="14" fill="#232F3E">Current Monthly Cost: <tspan font-weight="bold" fill="#666">$45,000</tspan></text>
+  <text x="60" y="505" font-family="Arial" font-size="14" fill="#232F3E">Projected AWS Cost: <tspan font-weight="bold" fill="#4CAF50">$28,450</tspan></text>
+  <text x="60" y="535" font-family="Arial" font-size="14" fill="#232F3E">Monthly Savings: <tspan font-weight="bold" fill="#4CAF50">$16,550 (38%)</tspan></text>
+  
+  <rect x="500" y="430" width="340" height="110" fill="white" stroke="#FF9900" stroke-width="1" rx="3"/>
+  <text x="670" y="455" font-family="Arial" font-size="14" fill="#FF9900" text-anchor="middle" font-weight="bold">Complexity Breakdown</text>
+  <text x="520" y="485" font-family="Arial" font-size="13" fill="#232F3E">Low Complexity: <tspan fill="#4CAF50" font-weight="bold">142 VMs (95%)</tspan></text>
+  <text x="520" y="510" font-family="Arial" font-size="13" fill="#232F3E">Medium Complexity: <tspan fill="#FF9900" font-weight="bold">6 VMs (4%)</tspan></text>
+  <text x="520" y="535" font-family="Arial" font-size="13" fill="#232F3E">High Complexity: <tspan fill="#F44336" font-weight="bold">2 VMs (1%)</tspan></text>
+</svg>
