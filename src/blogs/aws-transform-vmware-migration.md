@@ -41,7 +41,7 @@ AWS Transform addresses these challenges through automation and AI-driven insigh
 
 ## AWS Transform Architecture
 
-![AWS Transform Architecture](/Saumils-blog/images/aws-transform/detailed-architecture.png)
+![AWS Transform Detailed Architecture](/Saumils-blog/images/aws-transform/detailed-architecture.png)
 
 The AWS Transform architecture consists of:
 
@@ -73,7 +73,7 @@ The AWS Transform architecture consists of:
 
 ### Step 1: Set Up AWS Transform
 
-![AWS Transform Setup](/Saumils-blog/images/aws-transform/setup-console.png)
+
 
 First, enable AWS Transform in your AWS account:
 
@@ -90,7 +90,7 @@ aws transform create-project \
 
 ### Step 2: Configure Discovery
 
-![Discovery Configuration](/Saumils-blog/images/aws-transform/discovery-setup.png)
+
 
 Set up discovery connectors for your VMware environment:
 
@@ -125,7 +125,7 @@ discovery.start_continuous_export(
 
 ### Step 3: Run Assessment
 
-![Assessment Dashboard](/Saumils-blog/images/aws-transform/assessment-results.png)
+
 
 AWS Transform analyzes your environment and provides insights:
 
@@ -151,7 +151,7 @@ print(f"Estimated monthly cost: ${results['costEstimate']['monthly']}")
 
 ### Step 4: Review Migration Recommendations
 
-![Migration Recommendations](/Saumils-blog/images/aws-transform/recommendations.png)
+
 
 AWS Transform provides detailed recommendations:
 
@@ -177,7 +177,7 @@ AWS Transform provides detailed recommendations:
 
 ### Step 5: Create Migration Waves
 
-![Wave Planning](/Saumils-blog/images/aws-transform/wave-planning.png)
+
 
 Organize workloads into logical migration waves:
 
@@ -217,7 +217,7 @@ for wave in waves:
 
 ### Step 6: Execute Migration
 
-![Migration Execution](/Saumils-blog/images/aws-transform/migration-progress.png)
+
 
 Use AWS Application Migration Service (MGN) for actual migration:
 
@@ -264,7 +264,7 @@ migrate_wave('wave-1-id')
 
 ### Step 7: Validate and Cutover
 
-![Validation Dashboard](/Saumils-blog/images/aws-transform/validation-results.png)
+
 
 Validate migrated workloads before cutover:
 
@@ -329,7 +329,7 @@ def perform_cutover(source_server_id):
 
 ### 1. Cost Optimization with AWS Transform
 
-![Cost Analysis](/Saumils-blog/images/aws-transform/cost-optimization.png)
+
 
 AWS Transform provides detailed cost analysis:
 
@@ -369,7 +369,7 @@ for dep in dependencies['dependencies']:
 
 ### 3. Automated Testing
 
-![Testing Framework](/Saumils-blog/images/aws-transform/automated-testing.png)
+
 
 Implement automated testing for migrated workloads:
 
@@ -444,7 +444,7 @@ def run_migration_tests(instance_id, test_suite):
 
 **AWS Transform Results:**
 
-![Migration Results](/Saumils-blog/images/aws-transform/migration-results.png)
+
 
 ```
 Discovery Duration: 14 days
