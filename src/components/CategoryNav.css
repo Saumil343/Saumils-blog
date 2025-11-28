@@ -1,0 +1,56 @@
+.category-nav {
+  background: #161b22;
+  border-bottom: 1px solid #30363d;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.category-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  gap: 0.5rem;
+  overflow-x: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #30363d #161b22;
+}
+
+.category-container::-webkit-scrollbar {
+  height: 6px;
+}
+
+.category-container::-webkit-scrollbar-track {
+  background: #161b22;
+}
+
+.category-container::-webkit-scrollbar-thumb {
+  background: #30363d;
+  border-radius: 3px;
+}
+
+.category-btn {
+  background: transparent;
+  color: #8b949e;
+  border: 1px solid #30363d;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.2s;
+}
+
+.category-btn:hover {
+  color: #58a6ff;
+  border-color: #58a6ff;
+}
+
+.category-btn.active {
+  background: #58a6ff;
+  color: #0d1117;
+  border-color: #58a6ff;
+  font-weight: 600;
+}
