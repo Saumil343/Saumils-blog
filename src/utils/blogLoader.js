@@ -5,22 +5,26 @@ import { Buffer } from 'buffer';
 window.Buffer = Buffer;
 
 // Import all markdown files
-import welcome from '../blogs/welcome.md?raw';
-import webDev from '../blogs/web-development-journey.md?raw';
 import awsBlog from '../blogs/gen-ai-healthcare-aws.md?raw';
+import strandsAgents from '../blogs/strands-agents-healthcare.md?raw';
 import awsBackup from '../blogs/aws-backup-cornerstone.md?raw';
 import awsBackupMastery from '../blogs/aws-backup-mastery.md?raw';
 import serverlessNotify from '../blogs/serverless-notify.md?raw';
 import s3Security from '../blogs/automated-s3-security.md?raw';
+import backupTesting from '../blogs/backup-testing-plan.md?raw';
+import amazonQ from '../blogs/amazon-q-developer.md?raw';
+import athenaVmware from '../blogs/aws-athena-vmware-migration.md?raw';
 
 const blogContents = {
-  'welcome.md': welcome,
-  'web-development-journey.md': webDev,
   'gen-ai-healthcare-aws.md': awsBlog,
+  'strands-agents-healthcare.md': strandsAgents,
   'aws-backup-cornerstone.md': awsBackup,
   'aws-backup-mastery.md': awsBackupMastery,
   'serverless-notify.md': serverlessNotify,
-  'automated-s3-security.md': s3Security
+  'automated-s3-security.md': s3Security,
+  'backup-testing-plan.md': backupTesting,
+  'amazon-q-developer.md': amazonQ,
+  'aws-athena-vmware-migration.md': athenaVmware
 };
 
 export function loadBlogPosts(category = null) {
@@ -30,7 +34,7 @@ export function loadBlogPosts(category = null) {
   try {
     for (const [filename, content] of Object.entries(blogContents)) {
       const { data, content: markdown } = matter(content);
-      
+
       const post = {
         id: id++,
         slug: filename.replace('.md', ''),

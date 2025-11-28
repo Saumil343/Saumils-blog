@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Background circle with gradient -->
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Circle background -->
+  <circle cx="50" cy="50" r="48" fill="url(#grad)" />
+  
+  <!-- Letter S -->
+  <text x="50" y="72" font-family="Arial, sans-serif" font-size="60" font-weight="bold" fill="white" text-anchor="middle">S</text>
+  
+  <!-- Small cloud icon in corner -->
+  <path d="M 75 25 Q 73 20 68 20 Q 65 15 60 15 Q 55 15 52 20 Q 48 18 45 20 Q 40 22 40 27 Q 40 32 45 34 L 70 34 Q 75 32 75 27 Z" fill="white" opacity="0.8"/>
+</svg>

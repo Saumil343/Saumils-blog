@@ -1,6 +1,6 @@
 ---
 title: "Gen-AI Powered Healthcare Queries with AWS Kendra & Bedrock"
-date: "2024-11-28"
+date: "2025-08-15"
 category: "Agentic AI"
 excerpt: "Exploring how to build intelligent healthcare query systems using AWS Kendra for search and AWS Bedrock for generative AI capabilities."
 ---
@@ -18,8 +18,7 @@ Healthcare professionals and patients frequently seek precise answers to complex
 
 ## Solution Overview
 
-![AWS Architecture](/images/kendra-bedrock-GenAI-Arch.png)
-
+![AWS Kendra and Bedrock Architecture](/Saumils-blog/images/kendra-bedrock-GenAI-Arch.png)
 
 This healthcare-focused solution integrates two powerful AWS tools:
 
@@ -39,6 +38,18 @@ This implementation involves the following steps:
 - The user's query text (e.g., "What are the warning signs for DKA?") is sent to Kendra, which retrieves relevant medical information.
 - **Result Parsing**: The response items from Kendra are filtered to extract the most relevant answer (e.g., through Highlights attributes) to be used for further processing.
 
+#### Creating a Kendra Index
+
+![Creating Kendra Index](/Saumils-blog/images/gen-ai-healthcare/step1.png)
+
+#### Adding a Data Source to Kendra
+
+![Adding Data Source - Step 1](/Saumils-blog/images/gen-ai-healthcare/step2.png)
+
+![Adding Data Source - Step 2](/Saumils-blog/images/gen-ai-healthcare/step3.png)
+
+![Adding Data Source - Step 3](/Saumils-blog/images/gen-ai-healthcare/step4.png)
+
 ### 2. Enhanced Response Generation with AWS Bedrock
 
 - The solution utilizes 'amazon.titan-text-lite-v1' bedrock model.
@@ -46,6 +57,8 @@ This implementation involves the following steps:
 - The context and original question are structured into a prompt format to enhance Bedrock's generative model's output.
 - **Generative Configuration**: Parameters such as temperature and maxTokenCount are optimized to balance response thoroughness and relevancy.
 - Bedrock then generates an enhanced response, adding additional clarity, context, and suggestions that make the information suitable for healthcare decision-making.
+
+![Bedrock Configuration](/Saumils-blog/images/gen-ai-healthcare/step5.png)
 
 ### 3. Python Application
 
@@ -128,9 +141,19 @@ A practical use case for this solution is illustrated with a query about diabeti
 
 2. **Kendra Response**: AWS Kendra retrieves a concise answer from document stored in S3, such as "DKA symptoms include excessive thirst, frequent urination, nausea, and fatigue."
 
+![Kendra Query Response](/Saumils-blog/images/gen-ai-healthcare/step6.png)
+
 3. **Enhanced Response via Bedrock**: Bedrock processes this response, adding further context, such as explaining symptoms in layperson's terms and suggesting next steps for patients. For instance, "Warning signs for DKA, a complication from high blood sugar, include extreme thirst, frequent urination, nausea, and fatigue. If these symptoms occur, patients should seek medical attention promptly to avoid severe complications."
 
+![Bedrock Enhanced Response](/Saumils-blog/images/gen-ai-healthcare/step7.png)
+
 This example demonstrates the combined power of Kendra and Bedrock to provide healthcare professionals with accurate, contextually enhanced answers that are easy to interpret for both patients and clinicians.
+
+### Sample Output
+
+![Sample Query Output](/Saumils-blog/images/gen-ai-healthcare/step8.png)
+
+![Enhanced Output Example](/Saumils-blog/images/gen-ai-healthcare/step9.png)
 
 ## Results
 

@@ -1,6 +1,6 @@
 ---
 title: "Serverless-Notify: Event-Driven Notifications with AWS Lambda"
-date: "2024-09-25"
+date: "2025-04-20"
 category: "Automation"
 excerpt: "Building a serverless notification system using AWS Lambda, SNS, and EventBridge for real-time alerts."
 ---

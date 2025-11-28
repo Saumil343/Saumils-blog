@@ -1,6 +1,6 @@
 ---
 title: "Automated S3 Security: Lambda Functions to the Rescue"
-date: "2024-08-20"
+date: "2025-02-28"
 category: "Automation"
 excerpt: "Implementing automated security controls for S3 buckets using Lambda functions to prevent data breaches and ensure compliance."
 ---

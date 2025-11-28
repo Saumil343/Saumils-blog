@@ -1,6 +1,6 @@
 ---
 title: "AWS Backup: The Cornerstone of Data Resilience"
-date: "2024-10-15"
+date: "2025-03-18"
 category: "AWS Backup"
 excerpt: "Understanding AWS Backup as the foundation for data protection and disaster recovery in the cloud."
 ---
